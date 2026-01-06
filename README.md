@@ -1,29 +1,22 @@
 # Práctica: Estructuras No Lineales - 
 
 ## Autor
-- Nombre: Javier Barrezueta
-- Carrera/Curso: Estructura de Datos 
+- Nombre: Derlis Yupangui
+- Carrera/Curso: Estructura de Datos
 
 
 ##  Nombre de la práctica - Fecha
-- Práctica: [Nombre exacto de la práctica]
-- Fecha: 5-1-2026
+- Práctica: Interface Comparable
+- Fecha: [2026-01-06]
 
 ## Descripción
-Descripción de que es lo que hizo o alcanzo desarrollar en la práctica.
-
-En el archivo IntTree.java se implementó la funcionalidad para calcular el tamaño del árbol basándose en la imagen de la pizarra, añadiendo un método público size() que inicia el proceso y un método privado sizeRecursive(Node node) que realiza el conteo real; este último utiliza recursividad para recorrer la estructura, retornando 0 si encuentra un nodo nulo o la suma de 1 (el nodo actual) más los resultados obtenidos de sus subárboles izquierdo y derecho para devolver el total de elementos existentes.
+El método compara el valor buscado con el nodo actual usando compareTo: si es igual, lo retorna; si es menor, repite la búsqueda en el hijo izquierdo, y si es mayor, en el derecho, deteniéndose si llega a un nodo nulo.
 
 ## Evidencias
 ### Captura 1
-Inserta aquí la captura del código o de la ejecución.
-- Archivo: `assets/captura-1.png`
-
-![alt text](image.png)
+![alt text](assets/image_code.png)
 
 ### Captura 2 
-Inserta aquí una segunda captura si aplica.
-- Archivo: `assets/captura-2.png`
+![alt text](assets/image.png)
 
-![alt text](image-2.png)
 

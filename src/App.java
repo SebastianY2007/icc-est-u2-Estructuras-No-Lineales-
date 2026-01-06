@@ -1,7 +1,10 @@
+import models.Person;
 import structures.trees.IntTree;
+import structures.trees.Tree;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        runTree();
         IntTree tree = new IntTree();
         tree.insert(10);
         tree.insert(15);
@@ -19,5 +22,22 @@ public class App {
 
         System.out.println("\nSize:");
         System.out.println(tree.size());
+    }
+
+    private static void runTree() {
+        Tree<Person> tree = new Tree<>();
+        tree.insert(new Person("Pablo", 21));
+        tree.insert(new Person("Maria", 23));
+        tree.insert(new Person("Ana", 25));
+        tree.insert(new Person("Pedro", 23));
+        tree.insert(new Person("Luis", 19));
+        tree.inOrder();
+
+        Person findPerson = tree.searchByAge(23);
+        if (findPerson != null) {
+            System.out.println(findPerson);
+        } else {
+            System.out.println("No se encontró");
+        }
     }
 }

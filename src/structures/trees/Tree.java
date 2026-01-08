@@ -1,8 +1,9 @@
 package structures.trees;
 
 import java.util.Stack;
-import models.Person;
+
 import structures.nodes.Node;
+import models.Person;
 
 public class Tree<T extends Comparable<T>> {
     private Node<T> root;

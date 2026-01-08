@@ -20,3 +20,13 @@ El método compara el valor buscado con el nodo actual usando compareTo: si es i
 ![alt text](assets/image.png)
 
 
+##  Nombre de la práctica - Fecha
+- Práctica: Graphs
+- Fecha: [2026-01-08]
+
+## Descripción
+En esta práctica se implementó un grafo no dirigido mediante listas de adyacencia, permitiendo agregar nodos, conectar aristas y mostrar las relaciones entre ellos.
+
+## Evidencias
+### Captura 1
+![alt text](<assets/image graphs.png>)

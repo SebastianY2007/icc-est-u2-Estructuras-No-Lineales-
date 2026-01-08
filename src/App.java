@@ -1,9 +1,13 @@
 import models.Person;
+import structures.graphs.Graph;
+import structures.nodes.Node;
 import structures.trees.IntTree;
 import structures.trees.Tree;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        runGraph();
+
         runTree();
         IntTree tree = new IntTree();
         tree.insert(10);
@@ -38,6 +42,30 @@ public class App {
             System.out.println(findPerson);
         } else {
             System.out.println("No se encontró");
+        }
+    }
+
+    private static void runGraph() {
+        Graph<String> graph = new Graph<>();
+
+        Node<String> nA = new Node<>("A");
+        Node<String> nB = new Node<>("B");
+        Node<String> nC = new Node<>("C");
+        Node<String> nD = new Node<>("D");
+
+        // graph.addEdge(nA);
+        graph.addEdge(nA, nB);
+        graph.addEdge(nA, nC);
+        graph.addEdge(nB, nD);
+        graph.addEdge(nC, nD);
+
+        graph.printGraph();
+    
+        // Conectados de A
+        Node<String>[] neighbors = graph.getNeighbors(nA);
+        System.out.print("Neighbors de A: ");
+        for (Node<String> neighbor : neighbors) {
+            System.out.print(neighbor + " ");
         }
     }
 }
